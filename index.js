@@ -25,7 +25,7 @@ const corsOptions={
     allowedHeaders: ['Content-Type', 'Authorization', 'Authentication']
 }
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use('/admin',adminRoute)
 app.get('/',(req,res)=>{
