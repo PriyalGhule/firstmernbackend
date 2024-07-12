@@ -13,6 +13,7 @@ const cors=require("cors");
 const authMiddleware=require("./middleware/auth-middleware");
 const Service=require('./models/service');
 const adminRoute=require('./routes/admin-router');
+const PORT=5000
 
 app.use(express.json());
 
@@ -142,7 +143,7 @@ app.use(errorMiddleware);
 
 connectDb.then(()=>{
     try{
-    app.listen(5000,()=>{
+    app.listen(PORT,()=>{
     console.log("app is running");
 })
 console.log("Database connected successfully");
