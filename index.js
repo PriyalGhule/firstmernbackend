@@ -19,7 +19,7 @@ app.use(express.json());
 
 
 const corsOptions={
-    origin:"http://localhost:5173",
+    origin:"http://localhost:5173https://astonishing-heliotrope-dd80b0.netlify.app",
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD'],
     credentials:true,
     allowedHeaders: ['Content-Type', 'Authorization', 'Authentication']
